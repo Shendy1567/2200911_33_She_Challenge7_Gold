@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("partials/head"); %>
+  <title>Admin Page</title>
+</head>
+<body>
+  <div class=" container flex flex-row justify-between border-solid w-full mx-auto mt-[25px] bg-white h-[80px] rounded-[12px]  ">
+    <div class="bg-inherit font-bold self-center text-[20px] leading-[28px] ms-[25px] ">List of Users</div>
+    <a class="bg-inherit self-center" href="/admin/create">
+      <button>
+        <div class="bg-[#1960EA] w-[180px] h-[48px] items-center flex justify-evenly rounded-[10px] me-[25px]">
+          <img class="bg-inherit self-center" src="assets/adminassets/plus-circle.svg" alt="plus-circle">
+          <div class="bg-inherit text-white text-[14px] leading-[20px]"> Create New ID</div>
+        </div>
+      </button>
+    </a>
+  </div>
+  <div class="container mx-auto mt-[16px] p-[20px] bg-white rounded-[12px]">
+    <table class="table-auto w-full">
+      <thead>
+        <tr class=" bg-[#C3CAD6] text-[#5A5A5A] text-left h-[52px]">
+          <th scope="col" class="bg-inherit text-center font-normal">User ID</th>
+          <th scope="col" class="bg-inherit font-normal ">Username</th>
+          <th scope="col" class="bg-inherit font-normal">Password</th>
+          <th scope="col" class="bg-inherit font-normal">Time Created</th>
+          <th scope="col" class="bg-inherit font-normal">Last Updated</th>
+          <th scope="col" class="bg-inherit font-normal">Action</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white font-semibold ">
+        <% for(var i=0; i < data.length; i++) { %>
+        <tr class="bg-inherit h-[52px]">
+          <button>
+            <a href="/admin/<%= data[i].id %>/">
+              <td class="bg-inherit text-center"><%= data[i].id %></td>
+              <td class="bg-inherit"><%= data[i].username %></td>
+              <td class="bg-inherit"><%= data[i].password %></td>
+              <td class="bg-inherit"><%= data[i].createdAt %></td>
+              <td class="bg-inherit"><%= data[i].updatedAt %></td>
+              <td class="bg-inherit">
+                <div class="bg-inherit">
+                  <div class="bg-inherit flex">
+                    <button>
+                      <a class="bg-white w-[75px] h-[35px] items-center flex justify-evenly rounded-[10px] border-2 border-[#1960EA]" href="/admin/<%= data[i].id %>/">
+                        <img class="bg-inherit self-center" src="assets/adminassets/eye.svg" alt="edit">
+                        <div class="bg-inherit text-[#1960EA] text-[12px] leading-[18px]">Show</div>
+                      </a>
+                    </button>
+                  <div class="bg-inherit ms-[10px]">
+                    <button>
+                      <a class="bg-white w-[75px] h-[35px] items-center flex justify-evenly rounded-[10px] border-2 border-[#1960EA]" href="/admin/<%= data[i].id %>/edit">
+                        <img class="bg-inherit self-center" src="assets/adminassets/edit.svg" alt="delete">
+                        <div class="bg-inherit text-[#1960EA] text-[12px] leading-[18px]">Edit</div>
+                      </a>
+                    </button>
+                  </div>
+                  <div class="bg-inherit ms-[10px]">
+                    <button>
+                      <a class="bg-white w-[75px] h-[35px] items-center flex justify-evenly rounded-[10px] border-2 border-[#1960EA]" onclick="return confirm('are you sure ?')" href="/admin/<%= data[i].id %>/delete">
+                        <img class="bg-inherit self-center" src="assets/adminassets/trash-2.svg" alt="delete">
+                        <div class="bg-inherit text-[#1960EA] text-[12px] leading-[18px]">Delete</div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </td>
+            </a>
+          </button>
+            
+
+            
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+    <div class="flex justify-center bg-white">
+      <a href="/login/logout" class="bg-[#1960EA] w-[98px] justify-center h-[48px] flex rounded-[12px] mt-[64px]">
+        <div class="self-center bg-inherit">
+          <button class="bg-inherit">
+            <div class="font-bold bg-inherit text-white text-[14px] leading-[20px]">Logout</div>
+          </button>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

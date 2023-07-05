@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("partials/head"); %>
+    <title>Create Page</title>
+  </head>
+  <body>
+    <div class=" container flex flex-row border-solid w-full mx-auto mt-[25px] bg-white h-[80px] rounded-[12px]  ">
+      <a href="/admin" class="bg-inherit self-center ms-[24px] me-[16px] ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#1960EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 8L8 12L12 16" stroke="#1960EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 12H8" stroke="#1960EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </a>
+      <div class="bg-inherit font-bold self-center text-[20px] leading-[28px]">Create User</div>
+    </div>
+    <div class="container flex flex-row w-full mx-auto mt-[16px]">
+      <div class="container w-full bg-inherit p-[24px] me-[20px] border rounded-[12px] bg-white">
+        <div class="bg-inherit font-bold self-center text-[20px] leading-[28px] ">User Informations</div>
+        <hr class="h-px my-[24px] bg-[#E5E5E5] border-0">
+        <form action="/admin/newuser" method="POST">
+          <div class="grid grid-cols-3 gap-[40px] bg-white">
+            <div class="bg-inherit">
+              <div class="bg-inherit text-[#5A5A5A] text-[16px] leading-[20px] mb-[10px] ">Username</div>
+              <input class="bg-inherit border w-full p-[12px] rounded-[8px] mt-[12px] border-[#B1B1B1]" name="username" type="text" placeholder="username">
+            </div>
+            <div class="bg-inherit">
+              <div class="bg-inherit text-[#5A5A5A] text-[16px] leading-[20px] mb-[10px] ">Password</div>
+              <input class="bg-inherit border w-full p-[12px] rounded-[8px] mt-[12px] border-[#B1B1B1]" name="password" type="text" placeholder="password">
+            </div>
+            <div class="bg-inherit">
+              <div class="bg-inherit text-[#5A5A5A] text-[16px] leading-[20px] mb-[10px] ">Fullname</div>
+              <input class="bg-inherit border w-full p-[12px] rounded-[8px] mt-[12px] border-[#B1B1B1]" name="fullname" type="text" placeholder="fullname">
+            </div>
+            <div class="bg-inherit">
+              <div class="bg-inherit text-[#5A5A5A] text-[16px] leading-[20px] mb-[10px] ">City</div>
+              <input class="bg-inherit border w-full p-[12px] rounded-[8px] mt-[12px] border-[#B1B1B1]" name="city" type="text" placeholder="city">
+            </div>
+            <div class="bg-inherit">
+              <div class="bg-inherit text-[#5A5A5A] text-[16px] leading-[20px] mb-[10px] ">Birthday</div>
+              <input class="bg-inherit border w-full p-[12px] rounded-[8px] mt-[12px] border-[#B1B1B1]" name="birthday" type="date" placeholder="birthday">
+            </div>
+            <div class="bg-inherit">
+              <div class="bg-inherit text-[#5A5A5A] text-[16px] leading-[20px] mb-[10px] ">Gender</div>
+              <input class="bg-inherit border w-full p-[12px] rounded-[8px] mt-[12px] border-[#B1B1B1]" name="gender" type="text" placeholder="gender">
+            </div>
+          </div>
+          <div class="flex justify-end bg-white">
+            <div class="bg-[#1960EA] w-[98px] justify-center h-[48px] flex rounded-[12px] mt-[64px]">
+              <div class="self-center bg-inherit">
+                <button type="submit" class="bg-inherit">
+                  <div class="font-bold bg-inherit text-white text-[14px] leading-[20px]">Create</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

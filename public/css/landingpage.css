@@ -1,0 +1,573 @@
+/* HTML properties */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* navigation properties */
+
+.navigation {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: 700;
+  height: 74px;
+}
+
+.logo-margin {
+  margin: 0px 150px 0px 75px; 
+}
+
+.nav-link {
+  font-size: 12px;
+}
+
+.navbar-collapse {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* Letterspacing */
+
+.spacing-3px {
+  letter-spacing: 3px;
+}
+
+.spacing-2px {
+  letter-spacing: 2px;
+}
+
+/* font weight */
+
+/* Background Properties */
+
+.background {
+  height: 120vh;
+  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: auto;
+  display: flex;
+
+}
+
+/* Main content properties */
+
+.mainbg {
+  background-image:radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url(../assets/landingassets/main-bg.jpg);
+}
+
+.mainbg .container h1 {
+  font-size: 72px;
+  font-family: arial;
+}
+
+.mainbg .container h3 {
+  margin-top: 50px;
+  font-size: 24px;
+  font-family: arial;
+}
+
+.mainbg .container .playbutton {
+  margin-top: 50px;
+  width: 260px;
+  height: 60px;
+  color: black;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.mainbg .swipe-button {
+  position: absolute;
+  bottom: 5vh;
+  color: black;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.mainbg .swipe-down {
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* About Properties */
+
+.aboutbg {
+  background-image:radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../assets/landingassets/the-games-bg.jpg);
+}
+
+.aboutbg .container h3{
+  margin-top: 20vh;
+  text-align: start;
+  font-size: 24px;
+  font-family: arial;
+}
+
+.aboutbg .container h1{
+  margin-top: 20px;
+  text-align: start;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 54px;
+  font-family: arial;
+}
+
+/* Carousel */
+
+.carousel-container {
+  width: 858px;
+}
+
+.carousel-indicators {
+  width: 100%;
+  margin: auto; 
+  position: absolute; 
+  bottom: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 14px;
+  height: 14px; 
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 100%; 
+  margin: 0px 30px;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  left: -5vw;
+}
+
+.carousel-control-next {
+  position: absolute;
+  right: -5vw;
+}
+
+/* features Properties */
+
+.featurebg {
+  background-image:radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url(../assets/landingassets/features.jpg);
+}
+.featurebg .container {
+  margin-left: 53vw;
+}
+
+.featurebg .container h3 {
+  margin-top: 25vh;
+  text-align: start;
+  font-size: 24px;
+  font-family: arial;
+}
+
+.featurebg .container h1 {
+  margin-top: 10px;
+  text-align: start;
+  font-size: 56px;
+  font-family: arial;
+}
+
+.featurebg .content {
+  margin-top: 10vh;
+}
+
+.featurebg .content .vector {
+  align-items: center;
+  margin: 0px;
+}
+
+.featurebg .content .round-fill {
+  width: 14px; 
+  height: 14px; 
+  border: 1px solid white;
+  background: white;
+  border-radius: 100%; 
+  margin-top: 7px;
+}
+
+.featurebg .content .progress-bar {
+  width: 0; 
+  height: 130px; 
+  border: 2px solid white;
+}
+
+.featurebg .content .round {
+  width: 14px; 
+  height: 14px; 
+  border: 1px solid white;
+  border-radius: 100%; 
+  margin-bottom: 80px;
+}
+
+.featurebg .content .yellow-text {
+  font-family: arial;
+  font-size: 24px;
+}
+
+
+/* requirements Properties */
+
+.reqbg {
+  background-image:radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url(../assets/landingassets/requirements.png);
+}
+
+.reqbg .container h3 {
+  margin-top: 15vh;
+  font-size: 14px;
+  font-family: arial;
+}
+
+.reqbg .container h1{
+  text-align: start;
+  font-size: 56px;
+  font-family: arial;
+}
+
+.reqbg .container .system-table {
+  margin-top: 5vh;
+}
+
+.reqbg .container table, th, td {
+  border: 1px solid #979797;
+  text-align: start;
+}
+
+.reqbg .container .yellow-text {
+  font-size: 24px;
+  font-family: arial;
+  font-weight: 400;
+  margin: 15px 0px 7px 15px;
+}
+
+.reqbg .container .white-text {
+  font-size: 18px;
+  font-family: arial;
+  font-weight: 400;
+  margin: 0px 40px 0px 15px; 
+}
+/* quotes Properties */
+
+.quotesbg {
+  background-image:radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%), url(../assets/landingassets/top-score-bg.png);
+}
+
+
+.quotesbg .quote-text {
+  margin-top: 350px;
+  margin-right: 0;
+}
+
+.quotesbg .container .quote-text h1{
+  text-align: start;
+  font-size: 56px;
+  font-family: arial;
+}
+
+.quotesbg .container .quote-text h3{
+  text-align: start;
+  font-size: 22px;
+}
+
+.quotesbg .container .seemore-button {
+  text-align: start;
+}
+
+.quotesbg .container .playbutton {
+  margin-top: 40px;
+  width: 260px;
+  height: 60px;
+  color: black;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+ .quotesbg .card-margin {
+  margin-top: -460px;
+ }
+
+.quotesbg .mid-card-margin {
+  margin-left: -150px; 
+  margin-right: 220px;
+}
+
+.quotesbg .tp-card-margin {
+  margin-right: 70px;
+}
+
+.quotesbg .quote-card {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.quotesbg .quote-card .card {
+  border: none;
+}
+
+.quotesbg .quote-card .card-header {
+  border-bottom: none;
+  position: relative;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.quotesbg .quote-card .card-header .profile-pic {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  -webkit-box-shadow: 5px 2px #ffc107;
+  box-shadow: 5px 2px #FFB548;
+}
+
+.quotesbg .quote-card .card-header .name {
+  font-size: 20px;
+  font-family: arial;
+  margin: -50px 0px 0px 90px;
+}
+
+.quotesbg .quote-card .card-header .nickname {
+  font-size: 14px;
+  font-family: arial;
+  color: gray;
+  margin: -8px 0 0 90px;
+}
+
+.quotesbg .quote-card .card-header .twitter-logo {
+  position: absolute;
+  right: 16px;
+  top: 29px;
+}
+
+
+.quotesbg .quote-card .card-body {
+  border: none;
+  text-align: left;
+  margin-top: 10px
+}
+
+.quotesbg .quote-card h5 {
+  font-size: 14px;
+}
+
+.quotesbg .quote-card p {
+  font-size: 10px;
+  color: gray;
+}
+
+/* Subcribe Properties */
+
+.newsbg {
+  background-image: url(../assets/landingassets/newsletter.png);
+  position: relative;
+}
+
+.newsbg .container h3{
+  font-size: 24px;
+  font-family: arial;
+  width: 250px;
+
+}
+
+.newsbg .container h1{
+  font-size: 65px;
+  margin-bottom: 25px;
+}
+
+.newsbg .container p{
+  font-size: 18px;
+  font-family: arial;
+  margin: 25px 0px;
+}
+
+.newsbg .container label{
+  font-size: 14px;
+  font-family: arial;
+  margin-left: 15px;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.newsbg .container input {
+  margin-left: 15px;
+}
+
+.newsbg .container input::placeholder {
+  color:#FFB548;
+  font-size: 18px;
+  padding: 0;
+}
+
+.newsbg .container button {
+  margin-left: 15px;
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+}
+
+.newsbg .footer-text {
+  display: flex;
+}
+
+.newsbg .footer-img-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsbg .footer-nav {
+  font-size: 12px;
+}
+
+.newsbg .footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .logo-margin {
+    margin-left: 25px;
+  }
+
+  .mainbg .container h1 {
+    font-size: 7vh;
+  }
+
+  .carousel-control-prev {
+    position: absolute;
+    left: -0;
+  }
+  
+  .carousel-control-next {
+    position: absolute;
+    right: 0;
+  }
+
+  .navbar-collapse {
+    margin-left: 010px;
+  }
+
+  .reqbg .container h1{
+    font-size: 5vh;
+  }
+
+  .reqbg .container .system-table {
+    margin-top: 2.5vh;
+  }
+
+  .newsbg .container h1{
+    font-size: 65px;
+    margin-bottom: 25px;
+  }
+  
+
+}
+
+@media (max-width: 800px) {
+  .featurebg .container {
+    margin-left: 25vw;
+  }
+
+  .newsbg .container .news-content {
+    margin-left: -30vw;
+  }
+
+  .newsbg .container div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 40px;
+  }
+
+  .newsbg .footer-text {
+    display: block;
+  }
+
+  .newsbg .footer-img-link {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 992px) {
+  .quotesbg .quote-card {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .quotesbg .quote-text {
+    margin-top: 5vh;
+  }
+  .quotesbg .container .quote-text h1{
+    text-align: center;
+  }
+  
+  .quotesbg .container .quote-text h3{
+    text-align: center;
+  }
+  
+  .quotesbg .container .seemore-button {
+    text-align: center;
+  }
+
+  .quotesbg .card-margin {
+    margin-top: 5vh;
+   }
+
+   .quotesbg .mid-card-margin {
+    margin: 0;
+  }
+
+  .quotesbg .tp-card-margin {
+    margin: 0;
+  }
+
+  .quotesbg .container .playbutton {
+    margin-top: 10px;
+  }
+
+  .quotesbg .card-margin {
+    margin-top: 20px;
+   }
+
+   .quotesbg .quote-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navigation {
+    background-color: transparent;
+  }
+}
+

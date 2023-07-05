@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("partials/head"); %>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="ms-[50px] mt-[25px] flex">
+      <a class="bg-inherit self-center flex" href="/">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#1960EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 8L8 12L12 16" stroke="#1960EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 12H8" stroke="#1960EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="ms-[25px]">
+            Back
+          </div>
+      </a>
+    </div>
+    <div class="container flex flex-col w-[450px] mx-auto mt-[80px] bg-white rounded-[14px] py-[24px]  ">
+      <div class="bg-inherit font-bold self-center text-[20px] leading-[28px] ">Login</div>
+      <hr class="h-px my-[24px] bg-[#E5E5E5] border-0">
+      <div class="container w-5/6 mx-auto bg-[#E4F5FF] py-[12px] rounded-[8px]">
+        <div class="flex flex-col bg-inherit">
+          <div class="flex bg-inherit">
+            <img class="bg-inherit ms-[20px]" src="assets/adminassets/info.svg" alt="info">
+            <div class="ms-[20px] bg-inherit font-semibold text-[14px] leading-[18px]">To login as user</div>
+          </div>
+          <div class="flex bg-inherit mt-[8px]">
+            <div class="ms-[60px] bg-inherit text-[14px] leading-[18px]">Username: user</div>
+            <div class="ms-[20px] bg-inherit text-[14px] leading-[18px]">Password: user</div>
+          </div>
+        </div>
+        <div class="flex flex-col bg-inherit mt-[10px]">
+          <div class="flex bg-inherit">
+            <img class="bg-inherit ms-[20px]" src="assets/adminassets/info.svg" alt="info">
+            <div class="ms-[20px] bg-inherit font-semibold text-[14px] leading-[18px]">To login as superuser</div>
+          </div>
+          <div class="flex bg-inherit mt-[8px]">
+            <div class="ms-[60px] bg-inherit text-[14px] leading-[18px]">Username: su</div>
+            <div class="ms-[20px] bg-inherit text-[14px] leading-[18px]">Password: su</div>
+          </div>
+        </div>
+      </div>
+      <form action="/login" method="POST" class="bg-white">
+        <div class="container w-5/6 mx-auto mt-[25px] mb-[40px] bg-inherit">
+          <div class="bg-inherit text-[#5A5A5A] text-[16px] leading-[20px]">Username</div>
+          <input class="bg-inherit border w-full p-[12px] rounded-[8px] mt-[12px]" type="text" name="username" placeholder="Type your Username">
+          <div class="bg-inherit text-[#5A5A5A] mt-[24px]">Password</div>
+          <input class="bg-inherit border w-full p-[12px] rounded-[8px] mt-[12px]" type="password" name="password" placeholder="Type your Password">
+          <% if (messages.error) { %>
+            <h5 class="bg-inherit text-red-600 "><%= messages.error %></h5>
+            <% } %>
+        </div>
+        <button type="submit" class="bg-[#1960EA] w-5/6 mx-auto justify-center h-[56px] flex rounded-[12px]">
+          <div class="self-center bg-inherit">
+              <div class="font-bold bg-inherit text-white text-[14px] leading-[20px]"> LOGIN</div>
+          </div>
+        </button>
+      </form>
+      <a href="/register" class="bg-inherit mt-[20px]">
+        <button class="bg-[#1960EA] w-5/6 mx-auto justify-center h-[56px] flex rounded-[12px]">
+          <div class="self-center bg-inherit">
+              <div class="font-bold bg-inherit text-white text-[14px] leading-[20px]"> REGISTER</div>
+          </div>
+        </button>
+      </a>
+    </div>
+  </body>
+</html>

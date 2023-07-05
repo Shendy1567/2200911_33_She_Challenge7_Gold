@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #9C835F;
+  color: black;
+}
+
+/* Header */
+header h1 {
+  font-size: 36px;
+  color: #F9B23D;
+}
+
+.main-content {
+  margin-top: 50px;
+}
+
+.back {
+  margin-left: 50px;
+}
+
+/* Player-computer heading */
+h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+/* pointer event computer */
+.computer button {
+  pointer-events: none;
+}
+
+
+/* vs and result */
+.vs {
+  font-size: 144px;
+  color: #BD0000;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.vs-container {
+  margin: 0 120px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.p-win, .com-win, .draw {
+  color: white;
+  transform: rotate(-30deg);
+  font-size: 38px;
+  display: none;
+  align-self: center;
+  width: 280px;
+  height: 170px;
+  word-wrap: break-word;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.p-win {
+  padding: 27px 50px;
+  background-color: #4C9654;
+}
+
+.com-win {
+  padding: 27px 75px;
+  background-color: red;
+}
+
+.draw {
+  padding: 55px 80px;
+  background-color: orange;
+}
+
+/* pointer animation hover on player button */
+.grow { 
+  transition: all .2s ease-in-out; 
+  }
+  
+.grow:hover { 
+  transform: scale(1.1); 
+}
+
+/* refresh */
+.refresh {
+  width: 70px;
+  height: 60px;
+}
+
+/* gambar */
+.gambar{
+  margin: 10px 0;
+  border-radius: 30px;
+}
+
+.rock {
+  width: 216px;
+  height: 180px;
+  padding: 44px 44px;
+}
+
+.paper {
+  width: 223px;
+  height: 206px;
+  padding: 26px 54px;
+}
+
+.scissors {
+  width: 224px;
+  height: 204px;
+  padding: 22px 45px;
+}
+
+@media (max-height: 900px) {
+  /* vs */
+  .vs {
+    padding:0px;
+  }
+}
+
+@media (max-width: 900px) {
+    /* vs */
+  .vs-container {
+    margin: 0;
+  }
+    /* Header */
+  .back {
+    margin-left: 10px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  /* result */
+  .p-win, .com-win, .draw {
+    font-size: 20px;
+    width: 180px;
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  .p-win {
+    padding: 17px 25px;
+  }
+
+  .com-win {
+    padding: 17px 45px;
+  }
+
+  .draw {
+    padding: 35px 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* vs */
+  .vs {
+    font-size: 70px;
+    letter-spacing: 2px;
+  }
+
+  /* Player-computer heading */
+  h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+    /* result */
+  .p-win, .com-win, .draw {
+    font-size: 16px;
+    width: 90px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 0px 15px;
+  }
+
+  .p-win {
+    padding: 15px 10px;
+  }
+
+  .com-win {
+    padding: 17px 10px;
+  }
+
+  .draw {
+    padding: 30px 20px;
+  }
+
+    /* gambar */
+  .rock {
+    width: 120px;
+    height: 100px;
+    padding: 11px;
+    border-radius: 30px;
+  }
+
+  .paper {
+    width: 125px;
+    height: 130px;
+    padding: 13px 27px;
+    border-radius: 30px;
+  }
+
+  .scissors {
+    width: 120px;
+    height: 122px;
+    padding: 11px 23px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  /* Player-computer heading */
+  h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-height: 700px) and (orientation: portrait) {
+  .main-content {
+    margin-top: 50px;
+  }
+
+  /* gambar */
+  .rock {
+    width: 120px;
+    height: 100px;
+    padding: 11px;
+    border-radius: 30px;
+  }
+  
+  .paper {
+    width: 125px;
+    height: 130px;
+    padding: 13px 27px;
+    border-radius: 30px;
+  }
+  
+  .scissors {
+    width: 120px;
+    height: 122px;
+    padding: 11px 23px;
+    border-radius: 30px;
+  }
+}
